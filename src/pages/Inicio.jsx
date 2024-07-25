@@ -23,63 +23,63 @@ export default function Inicio({ t }) {
 
           <section className="abilities__grid mt-4">
             <figure>
-              <img src="/assets/img/technologies/mysql.svg" alt="MySQL" title="MySQL" />
+              <img src="public/assets/img/technologies/mysql.svg" alt="MySQL" title="MySQL" />
             </figure>
 
             <figure>
-              <img src="/assets/img/technologies/aws.svg" alt="Amazon Web Services" title="Amazon Web Services" />
+              <img src="public/assets/img/technologies/aws.svg" alt="Amazon Web Services" title="Amazon Web Services" />
             </figure>
 
             <figure>
-              <img src="/assets/img/technologies/css3.svg" alt="CSS 3" title="CSS3" />
+              <img src="public/assets/img/technologies/css3.svg" alt="CSS 3" title="CSS3" />
             </figure>
 
             <figure>
-            <img src="/assets/img/technologies/html5.svg" alt="HTML 5" title="HTML5" />
+            <img src="public/assets/img/technologies/html5.svg" alt="HTML 5" title="HTML5" />
             </figure>
 
             <figure>
-              <img className="rounded" src="/assets/img/technologies/javascript.svg" alt="JavaScript" title="JavaScript" />
+              <img className="rounded" src="public/assets/img/technologies/javascript.svg" alt="JavaScript" title="JavaScript" />
             </figure>
 
             <figure>
-            <img src="/assets/img/technologies/django.svg" alt="Django" title="Django" />
+            <img src="public/assets/img/technologies/django.svg" alt="Django" title="Django" />
             </figure>
             
             <figure>
-              <img src="/assets/img/technologies/docker.svg" alt="Docker" title="Docker" />
+              <img src="public/assets/img/technologies/docker.svg" alt="Docker" title="Docker" />
             </figure>
 
             <figure>
-              <img src="/assets/img/technologies/php.svg" alt="PHP" title="PHP" />
+              <img src="public/assets/img/technologies/php.svg" alt="PHP" title="PHP" />
             </figure>
 
             <figure>
-              <img src="/assets/img/technologies/python.svg" alt="Python" title="Python" />
+              <img src="public/assets/img/technologies/python.svg" alt="Python" title="Python" />
             </figure>
 
             <figure>
-              <img src="/assets/img/technologies/react.svg" alt="React" title="React" />
+              <img src="public/assets/img/technologies/react.svg" alt="React" title="React" />
             </figure>
 
             <figure>
-              <img src="/assets/img/technologies/sass.svg" alt="Sass" title="SASS" />
+              <img src="public/assets/img/technologies/sass.svg" alt="Sass" title="SASS" />
             </figure>
 
             <figure>
-              <img src="/assets/img/technologies/symfony.svg" alt="Symfony" title="Symfony" />
+              <img src="public/assets/img/technologies/symfony.svg" alt="Symfony" title="Symfony" />
             </figure>
 
             <figure>
-              <img src="/assets/img/technologies/java.svg" alt="Java" title="Java" />
+              <img src="public/assets/img/technologies/java.svg" alt="Java" title="Java" />
             </figure>
 
             <figure>
-              <img src="/assets/img/technologies/figma.svg" alt="Figma" title="Figma" />
+              <img src="public/assets/img/technologies/figma.svg" alt="Figma" title="Figma" />
             </figure>
 
             <figure>
-              <img src="/assets/img/technologies/git.svg" alt="Git" title="Git" />
+              <img src="public/assets/img/technologies/git.svg" alt="Git" title="Git" />
             </figure>
           </section>
         </section>

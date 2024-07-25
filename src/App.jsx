@@ -23,6 +23,7 @@ export default function App() {
 
                 </Routes>
             </Router> */}
+            <Inicio t={t}/>
 
             <Language />
         </>

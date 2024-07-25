@@ -13,7 +13,7 @@ import Inicio from './pages/Inicio.jsx';
 const router = createHashRouter([
   {
     path:"/",
-    element: <Inicio />
+    element: <App />
   }
 ])
 

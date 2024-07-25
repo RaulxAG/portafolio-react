@@ -15,7 +15,7 @@ export default function Language() {
         <>
             <button onClick={changeLanguage} className="btn btn-link rounded-pill">
                 <img 
-                    src={currentLang === 'en' ? '/assets/img/flag-es.png' : '/assets/img/flag-en.png'} 
+                    src={currentLang === 'en' ? 'public/assets/img/flag-es.png' : 'public/assets/img/flag-en.png'} 
                     alt={currentLang === 'en' ? 'Cambiar a Español' : 'Change to English'}
                     style={{ width: '20px', height: '20px' }}
                 />
