@@ -1,0 +1,38 @@
+nav {
+    position: fixed;
+    width: 100%;
+    z-index: 10;
+    background-color: $color-primary-dark;
+
+    section {
+        width: 70%;
+
+        header {
+            h1 {
+                cursor: default;   
+            }
+        
+            h2 {
+                font-size: small;
+            }
+        }
+    
+        ul {
+            list-style: none;
+    
+            li {
+                a {
+                    text-decoration: none;
+                    padding: .2rem .7rem;
+                    border-radius: 5px;
+                    transition: all .2s linear;
+    
+                    &:hover {
+                        color: $color-primary;
+                        background-color: $color-red;
+                    }
+                }
+            }
+        }
+    }
+}

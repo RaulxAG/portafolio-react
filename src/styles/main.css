@@ -1,0 +1,142 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html > body {
+  background-color: #07070A;
+  color: #e7e7e7;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+html > body h2 {
+  color: #DA4167;
+}
+html > body a {
+  color: #e7e7e7;
+}
+html > body .btn-link {
+  background-color: #24272B;
+  position: fixed;
+  bottom: 15px;
+  right: 15px;
+}
+html > body .btn-link:hover {
+  background-color: #DA4167;
+}
+html > body .btn-link:active {
+  background-color: #E59F71 !important;
+}
+
+nav {
+  position: fixed;
+  width: 100%;
+  z-index: 10;
+  background-color: #24272B;
+}
+nav section {
+  width: 70%;
+}
+nav section header h1 {
+  cursor: default;
+}
+nav section header h2 {
+  font-size: small;
+}
+nav section ul {
+  list-style: none;
+}
+nav section ul li a {
+  text-decoration: none;
+  padding: 0.2rem 0.7rem;
+  border-radius: 5px;
+  transition: all 0.2s linear;
+}
+nav section ul li a:hover {
+  color: #07070A;
+  background-color: #DA4167;
+}
+
+main .about {
+  width: 65%;
+  position: relative;
+}
+main .about ::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 99vw;
+  height: 100%;
+  background-color: #24272B;
+  z-index: -1;
+}
+main .about article p {
+  text-align: justify;
+  color: #DA4167;
+  font-size: 3rem;
+  font-weight: 600;
+}
+main .about article p:nth-child(2) {
+  color: #e7e7e7;
+}
+main .abilities {
+  width: 65%;
+}
+main .abilities .abilities__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  justify-items: center;
+}
+main .abilities .abilities__grid figure {
+  padding: 0.5rem;
+  border-radius: 50%;
+  transition: all 0.3s linear;
+}
+main .abilities .abilities__grid figure img {
+  width: 50px;
+  height: 50px;
+  object-fit: contain;
+  display: block;
+  margin: 0 auto;
+}
+main .projects {
+  width: 65%;
+}
+main .projects .projects__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  justify-items: center;
+  gap: 0.5rem;
+}
+main .projects .projects__grid .projects__grid__card {
+  border-radius: 10px;
+  height: 200px;
+  background-color: #24272B;
+  position: relative;
+}
+main .projects .projects__grid .projects__grid__card img {
+  width: 100%;
+  object-fit: contain;
+  transition: all 0.3s linear;
+}
+main .projects .projects__grid .projects__grid__card article {
+  text-align: justify;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  color: #e7e7e7;
+  font-weight: bold;
+  transition: all 0.3s linear;
+}
+main .projects .projects__grid .projects__grid__card:hover article {
+  z-index: 1;
+}
+main .projects .projects__grid .projects__grid__card:hover img {
+  transform: scale(1.05);
+  filter: brightness(0.15);
+}
+
+/*# sourceMappingURL=main.css.map */
