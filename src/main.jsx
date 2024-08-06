@@ -5,21 +5,35 @@ import 'bootstrap-icons/font/bootstrap-icons.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 import './utils/i18n.jsx';
-import App from './App.jsx';
 import { createHashRouter, RouterProvider } from 'react-router-dom';
 
+import Language from './components/Language.jsx';
+import Menu from './components/Menu.jsx';
+import { useTranslation } from 'react-i18next';
 import Inicio from './pages/Inicio.jsx';
 
-const router = createHashRouter([
-  {
-    path:"/",
-    element: <App />
-  }
-])
+const App = () => {
+  const router = createHashRouter([
+    {
+      path:"/",
+      element: <Inicio t={t} />
+    }
+  ])
 
-ReactDOM.createRoot(document.getElementById('root')).render(
-  <React.StrictMode>
-    {/* <App /> */}
-    <RouterProvider router={router}/>
-  </React.StrictMode>,
-)
+  const { t } = useTranslation();
+
+  return (
+    <React.StrictMode>
+      {/* Menú */}
+      <Menu t={t} />
+
+      {/* Contenido */}
+      {/* <Inicio t={t}/> */}
+      <RouterProvider router={router} />
+
+      <Language />
+    </React.StrictMode>
+  );
+};
+
+ReactDOM.createRoot(document.getElementById('root')).render(<App />);

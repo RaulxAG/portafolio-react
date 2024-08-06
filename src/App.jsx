@@ -1,10 +1,10 @@
 import Language from './components/Language.jsx';
-import { BrowserRouter as Router, Route, Routes, createHashRouter, RouterProvider } from 'react-router-dom';
+
 import Menu from './components/Menu.jsx';
 import Inicio from './pages/Inicio.jsx';
 import { useTranslation } from 'react-i18next';
 
-export default function App() {
+export default function App2() {
     const { t } = useTranslation();
 
     return (
