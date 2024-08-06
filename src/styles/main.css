@@ -57,11 +57,11 @@ nav section ul li a:hover {
   background-color: #DA4167;
 }
 
-main .about {
+main .title {
   width: 65%;
   position: relative;
 }
-main .about ::before {
+main .title::before {
   content: "";
   position: absolute;
   top: 0;
@@ -72,14 +72,38 @@ main .about ::before {
   background-color: #24272B;
   z-index: -1;
 }
-main .about article p {
+main .title article p {
   text-align: justify;
   color: #DA4167;
   font-size: 3rem;
   font-weight: 600;
 }
-main .about article p:nth-child(2) {
+main .title article p:nth-child(2) {
   color: #e7e7e7;
+}
+main .title .about__links a {
+  text-decoration: none;
+  padding: 2px 8px;
+}
+main .title .about__links a:hover {
+  background-color: #07070A;
+  border-radius: 10px;
+  transition: background ease-in 0.3s;
+}
+main .title .about__links a:hover i {
+  transition: color ease-in 0.3s;
+  color: #DA4167;
+}
+main .about {
+  width: 65%;
+}
+main .about img {
+  object-fit: contain;
+  width: 20%;
+}
+main .about article {
+  font-size: 1.3rem;
+  text-align: justify;
 }
 main .abilities {
   width: 65%;
@@ -93,6 +117,9 @@ main .abilities .abilities__grid figure {
   padding: 0.5rem;
   border-radius: 50%;
   transition: all 0.3s linear;
+}
+main .abilities .abilities__grid figure:hover {
+  box-shadow: 0 0 30px 1px #DA4167;
 }
 main .abilities .abilities__grid figure img {
   width: 50px;

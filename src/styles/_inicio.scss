@@ -1,9 +1,9 @@
 main {
-    .about {
+    .title {
         width: 65%;
         position: relative;
 
-        ::before {
+        &::before {
             content: "";
             position: absolute;
             top: 0;
@@ -25,6 +25,38 @@ main {
                 color: $color-white;
             }
         }
+
+        .about__links {
+            a {
+                text-decoration: none;
+                padding: 2px 8px;
+
+                &:hover {
+                    background-color: $color-primary;
+                    border-radius: 10px;
+                    transition: background ease-in .3s;
+
+                    i {
+                        transition: color ease-in .3s;
+                        color: $color-red;
+                    }
+                }
+            }
+        }
+    }
+
+    .about {
+        width: 65%;
+        
+        img {
+            object-fit: contain;
+            width: 20%;
+        }
+
+        article {
+            font-size: 1.3rem;
+            text-align: justify;
+        }
     }
 
     .abilities {
@@ -39,6 +71,10 @@ main {
                 padding: .5rem;
                 border-radius: 50%;
                 transition: all .3s linear;
+
+                &:hover {
+                    box-shadow: 0 0 30px 1px $color-red;
+                }
 
                 img {
                     width: 50px;

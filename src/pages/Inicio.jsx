@@ -5,20 +5,33 @@ export default function Inicio({ t }) {
   return (
     <>
       <main className="container pt-5">
-        <section className="about py-5 m-auto d-flex flex-column align-items-center justify-content-center">
+        <section className="title py-5 m-auto d-flex flex-column align-items-center justify-content-center">
 
           <article className="d-flex flex-column justify-content-center align-items-center w-100">
             <p className="m-0">{t('job')}</p>
             <p className="m-0">Raúl Arroyo</p>
           </article>
 
-          <section className="about__links d-flex justify-content-between gap-2">
+          <section className="about__links d-flex justify-content-between gap-2 mt-3">
             <a href="https://github.com/RaulxAG/" target="blank" className="fs-5" rel="noopener noreferrer" aria-label="GitHub">GitHub <i className="bi bi-github"></i></a>
             <a href="https://www.linkedin.com/in/raul-arrgon/" target="blank" className="fs-5" rel="noopener noreferrer" aria-label="LinkedIn">LinkedIn <i className="bi bi-linkedin"></i></a>
           </section>
         </section>
 
-        <section className="abilities m-auto mt-4">
+        <section className="about m-auto my-5">
+          <h2>{t('about')}</h2>
+
+          <div className="d-flex gap-5">
+            <article>
+              <p>{t('about-1')}</p>
+              <p>{t('about-3')}</p>
+            </article>
+
+            <img src="https://static-00.iconduck.com/assets.00/profile-default-icon-2048x2045-u3j7s5nj.png" alt="foto de perfil" />
+          </div>
+        </section>
+
+        <section className="abilities m-auto my-5">
           <h2>{t('skills')}</h2>
 
           <section className="abilities__grid mt-4">
