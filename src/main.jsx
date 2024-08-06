@@ -13,14 +13,14 @@ import { useTranslation } from 'react-i18next';
 import Inicio from './pages/Inicio.jsx';
 
 const App = () => {
+  const { t } = useTranslation();
+
   const router = createHashRouter([
     {
-      path:"/",
+      path: "/",
       element: <Inicio t={t} />
     }
-  ])
-
-  const { t } = useTranslation();
+  ]);
 
   return (
     <React.StrictMode>
@@ -28,7 +28,6 @@ const App = () => {
       <Menu t={t} />
 
       {/* Contenido */}
-      {/* <Inicio t={t}/> */}
       <RouterProvider router={router} />
 
       <Language />
@@ -37,3 +36,4 @@ const App = () => {
 };
 
 ReactDOM.createRoot(document.getElementById('root')).render(<App />);
+
