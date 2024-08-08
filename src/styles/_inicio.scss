@@ -1,50 +1,38 @@
-main {
-    .title {
-        width: 65%;
-        position: relative;
+.title {
+    background-color: $color-primary-dark;
+    padding: 5rem 0;
 
-        &::before {
-            content: "";
-            position: absolute;
-            top: 0;
-            left: 50%;
-            transform: translateX(-50%);
-            width: 99vw;
-            height: 100%;
-            background-color: $color-primary-dark;
-            z-index: -1;
+    article p {
+        text-align: justify;
+        color: $color-red;
+        font-size: 3rem;
+        font-weight: 600;
+
+        &:nth-child(2) {
+            color: $color-white;
         }
+    }
 
-        article p {
-            text-align: justify;
-            color: $color-red;
-            font-size: 3rem;
-            font-weight: 600;
+    .about__links {
+        a {
+            text-decoration: none;
+            padding: 2px 8px;
 
-            &:nth-child(2) {
-                color: $color-white;
-            }
-        }
+            &:hover {
+                background-color: $color-primary;
+                border-radius: 10px;
+                transition: background ease-in .3s;
 
-        .about__links {
-            a {
-                text-decoration: none;
-                padding: 2px 8px;
-
-                &:hover {
-                    background-color: $color-primary;
-                    border-radius: 10px;
-                    transition: background ease-in .3s;
-
-                    i {
-                        transition: color ease-in .3s;
-                        color: $color-red;
-                    }
+                i {
+                    transition: color ease-in .3s;
+                    color: $color-red;
                 }
             }
         }
     }
+}
 
+main {
     .about {
         width: 65%;
         

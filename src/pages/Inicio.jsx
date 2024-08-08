@@ -4,20 +4,19 @@ export default function Inicio({ t }) {
 
   return (
     <>
-      <main className="container pt-5">
-        <section className="title py-5 m-auto d-flex flex-column align-items-center justify-content-center">
+      <section className="title m-auto d-flex flex-column align-items-center justify-content-center">
+        <article className="d-flex flex-column justify-content-center align-items-center w-100">
+          <p className="m-0">&lt; {t('job')} &gt;</p>
+          <p className="m-0">Raúl Arroyo</p>
+        </article>
 
-          <article className="d-flex flex-column justify-content-center align-items-center w-100">
-            <p className="m-0">{t('job')}</p>
-            <p className="m-0">Raúl Arroyo</p>
-          </article>
-
-          <section className="about__links d-flex justify-content-between gap-2 mt-3">
-            <a href="https://github.com/RaulxAG/" target="blank" className="fs-5" rel="noopener noreferrer" aria-label="GitHub">GitHub <i className="bi bi-github"></i></a>
-            <a href="https://www.linkedin.com/in/raul-arrgon/" target="blank" className="fs-5" rel="noopener noreferrer" aria-label="LinkedIn">LinkedIn <i className="bi bi-linkedin"></i></a>
-          </section>
+        <section className="about__links d-flex justify-content-between gap-2 mt-3">
+          <a href="https://github.com/RaulxAG/" target="blank" className="fs-5" rel="noopener noreferrer" aria-label="GitHub">GitHub <i className="rrss bi bi-github"></i></a>
+          <a href="https://www.linkedin.com/in/raul-arrgon/" target="blank" className="fs-5" rel="noopener noreferrer" aria-label="LinkedIn">LinkedIn <i className="rrss bi bi-linkedin"></i></a>
         </section>
+      </section>
 
+      <main className="container">
         <section className="about m-auto my-5">
           <h2>{t('about')}</h2>
 

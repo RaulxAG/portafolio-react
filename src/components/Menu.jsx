@@ -14,10 +14,10 @@ export default function Menu({ t }) {
                             <a href="/">{t('home')}</a>
                         </li>
                         <li>
-                            <a href="/projects">{t('projects')}</a>
+                            <a href="/#/projects">{t('projects')}</a>
                         </li>
                         <li>
-                            <a href="/contacto">{t('contact')}</a>
+                            <a href="/#/contact">{t('contact')}</a>
                         </li>
                     </ul>
                 </section>

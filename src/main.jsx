@@ -11,6 +11,8 @@ import Language from './components/Language.jsx';
 import Menu from './components/Menu.jsx';
 import { useTranslation } from 'react-i18next';
 import Inicio from './pages/Inicio.jsx';
+import Proyectos from './pages/Proyectos.jsx';
+import Contacto from './pages/Contacto.jsx';
 
 const App = () => {
   const { t } = useTranslation();
@@ -19,6 +21,14 @@ const App = () => {
     {
       path: "/",
       element: <Inicio t={t} />
+    },
+    {
+      path: "/projects",
+      element: <Proyectos t={t} />
+    },
+    {
+      path: "/contact",
+      element: <Contacto t={t} />
     }
   ]);
 
