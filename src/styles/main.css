@@ -43,6 +43,11 @@ html > body .btn-link:active {
   background-color: #E59F71 !important;
 }
 
+@media screen and (max-width: 767px) {
+  html > body .btn-link {
+    bottom: 70px;
+  }
+}
 nav {
   position: fixed;
   width: 100%;
@@ -70,6 +75,15 @@ nav section ul li a {
 nav section ul li a:hover {
   color: #07070A;
   background-color: #DA4167;
+}
+
+.mobileMenu {
+  background-color: #24272B;
+  position: fixed;
+  bottom: 0;
+}
+.mobileMenu ul {
+  list-style: none;
 }
 
 .title {
@@ -169,6 +183,12 @@ main .projects .projects__grid .projects__grid__card:hover article {
 main .projects .projects__grid .projects__grid__card:hover img {
   transform: scale(1.05);
   filter: brightness(0.15);
+}
+
+@media screen and (max-width: 767px) {
+  .title article p {
+    font-size: 1.4rem;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */

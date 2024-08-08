@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import ReactDOM from 'react-dom/client';
 import 'normalize.css';
 import 'bootstrap-icons/font/bootstrap-icons.css';
@@ -13,9 +13,22 @@ import { useTranslation } from 'react-i18next';
 import Inicio from './pages/Inicio.jsx';
 import Proyectos from './pages/Proyectos.jsx';
 import Contacto from './pages/Contacto.jsx';
+import MobileMenu from './components/MobileMenu.jsx';
 
 const App = () => {
   const { t } = useTranslation();
+  const [isMobile, setIsMobile] = useState(window.innerWidth < 1024);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMobile(window.innerWidth < 1024);
+    };
+
+    window.addEventListener('resize', handleResize);
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
+  }, []);
 
   const router = createHashRouter([
     {
@@ -35,12 +48,14 @@ const App = () => {
   return (
     <React.StrictMode>
       {/* Menú */}
-      <Menu t={t} />
+      {isMobile ? '' : <Menu t={t} />}
 
       {/* Contenido */}
       <RouterProvider router={router} />
 
-      <Language />
+      <Language t={t} />
+
+      {isMobile ? <MobileMenu t={t} /> : ''}
     </React.StrictMode>
   );
 };
