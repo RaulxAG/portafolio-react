@@ -85,6 +85,10 @@ nav section ul li a:hover {
 .mobileMenu ul {
   list-style: none;
 }
+.mobileMenu ul .fa-solid:hover {
+  transition: color 0.2s ease-in;
+  color: #DA4167;
+}
 
 .title {
   background-color: #24272B;
@@ -186,8 +190,34 @@ main .projects .projects__grid .projects__grid__card:hover img {
 }
 
 @media screen and (max-width: 767px) {
-  .title article p {
-    font-size: 1.4rem;
+  .title {
+    padding-block: 3rem;
+  }
+  .title article p:first-child {
+    font-size: 2rem;
+  }
+  .title article p:last-child {
+    font-size: 1.8rem;
+  }
+  main .about, main .abilities {
+    width: 90%;
+  }
+  main .about {
+    text-align: center;
+  }
+  main .about div {
+    margin-top: 2rem;
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+  main .about div article {
+    text-align: center;
+  }
+  main .about div img {
+    width: 30%;
+  }
+  main .abilities {
+    padding-bottom: 3rem;
   }
 }
 

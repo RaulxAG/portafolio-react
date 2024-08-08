@@ -122,10 +122,44 @@ main {
 
 @media screen and (max-width: 767px) {
     .title {
+        padding-block: 3rem;
+
         article {
-            p{
-                font-size: 1.4rem;
+            p:first-child {
+                font-size: 2rem;
+            }
+
+            p:last-child {
+                font-size: 1.8rem;
             }
         }
     }
+
+    main {
+        .about, .abilities {
+            width: 90%;
+        }
+
+        .about {
+            text-align: center;
+
+            div {
+                margin-top: 2rem;
+                flex-direction: column-reverse;
+                align-items: center;
+                
+                article {
+                    text-align: center;
+                }
+
+                img {
+                    width: 30%;
+                }
+            }
+        }
+
+        .abilities {
+            padding-bottom: 3rem;
+        }
+    }    
 }
