@@ -11,13 +11,13 @@ export default function Menu({ t }) {
 
                     <ul className="p-0 m-0 d-flex align-items-center justify-content-center gap-3">
                         <li>
-                            <a href="/">{t('home')}</a>
+                            <a href="/portafolio-react">{t('home')}</a>
                         </li>
                         <li>
-                            <a href="/#/projects">{t('projects')}</a>
+                            <a href="/portafolio-react/#/projects">{t('projects')}</a>
                         </li>
                         <li>
-                            <a href="/#/contact">{t('contact')}</a>
+                            <a href="/portafolio-react/#/contact">{t('contact')}</a>
                         </li>
                     </ul>
                 </section>
