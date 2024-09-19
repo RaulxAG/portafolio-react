@@ -47,6 +47,9 @@ html > body .btn-link:active {
   html > body .btn-link {
     bottom: 70px;
   }
+  html > body .projects {
+    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  }
 }
 nav {
   position: fixed;
@@ -128,23 +131,26 @@ main .about article {
   font-size: 1.3rem;
   text-align: justify;
 }
-main .abilities {
+main .section-abilities {
+  background-color: #e7e7e7;
+}
+main .section-abilities .abilities {
   width: 65%;
 }
-main .abilities .abilities__grid {
+main .section-abilities .abilities .abilities__grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
   justify-items: center;
 }
-main .abilities .abilities__grid figure {
+main .section-abilities .abilities .abilities__grid figure {
   padding: 0.5rem;
   border-radius: 50%;
   transition: all 0.3s linear;
 }
-main .abilities .abilities__grid figure:hover {
+main .section-abilities .abilities .abilities__grid figure:hover {
   box-shadow: 0 0 30px 1px #DA4167;
 }
-main .abilities .abilities__grid figure img {
+main .section-abilities .abilities .abilities__grid figure img {
   width: 50px;
   height: 50px;
   object-fit: contain;
@@ -217,8 +223,28 @@ main .projects .projects__grid .projects__grid__card:hover img {
     width: 30%;
   }
   main .abilities {
+    text-align: center;
     padding-bottom: 3rem;
   }
+}
+.projects {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+  gap: 3rem;
+}
+.projects__card {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 16px;
+  border: 2px solid #e7e7e7;
+  transition: all linear 0.3s;
+}
+.projects__card:hover {
+  background-color: #DA4167;
+  border: 2px solid #DA4167;
+}
+.projects__card:hover h2 {
+  color: #e7e7e7 !important;
 }
 
 /*# sourceMappingURL=main.css.map */

@@ -1,0 +1,22 @@
+.projects {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+    gap: 3rem; // Ajusta el espacio entre tarjetas
+
+    &__card {
+        border: 1px solid #ddd; // Ejemplo de borde
+        border-radius: 8px;
+        padding: 16px;
+        border: 2px solid $color-white;
+        transition: all linear .3s;
+    }
+
+    &__card:hover {
+        background-color: $color-red;
+        border: 2px solid $color-red;
+        
+        h2 {
+            color: $color-white !important;
+        }
+    }
+}

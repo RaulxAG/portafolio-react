@@ -1,5 +1,3 @@
-import CardProject from "../components/CardProject"
-
 export default function Inicio({ t }) {
 
   return (
@@ -16,8 +14,8 @@ export default function Inicio({ t }) {
         </section>
       </section>
 
-      <main className="container">
-        <section className="about m-auto my-5">
+      <main>
+        <section className="about m-auto my-5 pb-5">
           <h2>{t('about')}</h2>
 
           <div className="d-flex gap-5">
@@ -30,71 +28,74 @@ export default function Inicio({ t }) {
           </div>
         </section>
 
-        <section className="abilities m-auto my-5">
-          <h2>{t('skills')}</h2>
+        {/* <section className="section-abilities my-5 py-4">
 
-          <section className="abilities__grid mt-4">
-            <figure>
-              <img src="assets/img/technologies/mysql.svg" alt="MySQL" title="MySQL" />
-            </figure>
+          <section className="abilities m-auto">
+            <h2>{t('skills')}</h2>
 
-            <figure>
-              <img src="assets/img/technologies/aws.svg" alt="Amazon Web Services" title="Amazon Web Services" />
-            </figure>
+            <section className="abilities__grid mt-4">
+              <figure>
+                <img src="assets/img/technologies/mysql.svg" alt="MySQL" title="MySQL" />
+              </figure>
 
-            <figure>
-              <img src="assets/img/technologies/css3.svg" alt="CSS 3" title="CSS3" />
-            </figure>
+              <figure>
+                <img src="assets/img/technologies/aws.svg" alt="Amazon Web Services" title="Amazon Web Services" />
+              </figure>
 
-            <figure>
-            <img src="assets/img/technologies/html5.svg" alt="HTML 5" title="HTML5" />
-            </figure>
+              <figure>
+                <img src="assets/img/technologies/css3.svg" alt="CSS 3" title="CSS3" />
+              </figure>
 
-            <figure>
-              <img className="rounded" src="assets/img/technologies/javascript.svg" alt="JavaScript" title="JavaScript" />
-            </figure>
+              <figure>
+              <img src="assets/img/technologies/html5.svg" alt="HTML 5" title="HTML5" />
+              </figure>
 
-            <figure>
-            <img src="assets/img/technologies/django.svg" alt="Django" title="Django" />
-            </figure>
-            
-            <figure>
-              <img src="assets/img/technologies/docker.svg" alt="Docker" title="Docker" />
-            </figure>
+              <figure>
+                <img className="rounded" src="assets/img/technologies/javascript.svg" alt="JavaScript" title="JavaScript" />
+              </figure>
 
-            <figure>
-              <img src="assets/img/technologies/php.svg" alt="PHP" title="PHP" />
-            </figure>
+              <figure>
+              <img src="assets/img/technologies/django.svg" alt="Django" title="Django" />
+              </figure>
+              
+              <figure>
+                <img src="assets/img/technologies/docker.svg" alt="Docker" title="Docker" />
+              </figure>
 
-            <figure>
-              <img src="assets/img/technologies/python.svg" alt="Python" title="Python" />
-            </figure>
+              <figure>
+                <img src="assets/img/technologies/php.svg" alt="PHP" title="PHP" />
+              </figure>
 
-            <figure>
-              <img src="assets/img/technologies/react.svg" alt="React" title="React" />
-            </figure>
+              <figure>
+                <img src="assets/img/technologies/python.svg" alt="Python" title="Python" />
+              </figure>
 
-            <figure>
-              <img src="assets/img/technologies/sass.svg" alt="Sass" title="SASS" />
-            </figure>
+              <figure>
+                <img src="assets/img/technologies/react.svg" alt="React" title="React" />
+              </figure>
 
-            <figure>
-              <img src="assets/img/technologies/symfony.svg" alt="Symfony" title="Symfony" />
-            </figure>
+              <figure>
+                <img src="assets/img/technologies/sass.svg" alt="Sass" title="SASS" />
+              </figure>
 
-            <figure>
-              <img src="assets/img/technologies/java.svg" alt="Java" title="Java" />
-            </figure>
+              <figure>
+                <img src="assets/img/technologies/symfony.svg" alt="Symfony" title="Symfony" />
+              </figure>
 
-            <figure>
-              <img src="assets/img/technologies/figma.svg" alt="Figma" title="Figma" />
-            </figure>
+              <figure>
+                <img src="assets/img/technologies/java.svg" alt="Java" title="Java" />
+              </figure>
 
-            <figure>
-              <img src="assets/img/technologies/git.svg" alt="Git" title="Git" />
-            </figure>
+              <figure>
+                <img src="assets/img/technologies/figma.svg" alt="Figma" title="Figma" />
+              </figure>
+
+              <figure>
+                <img src="assets/img/technologies/git.svg" alt="Git" title="Git" />
+              </figure>
+            </section>
           </section>
-        </section>
+        </section> */}
 
         {/* <section className="projects m-auto mt-1">
           <h2>{t('projects')}</h2>
