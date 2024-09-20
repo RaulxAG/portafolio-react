@@ -4,19 +4,39 @@
     gap: 3rem; // Ajusta el espacio entre tarjetas
 
     &__card {
-        border: 1px solid #ddd; // Ejemplo de borde
+        position: relative; /* Necesario para posicionar elementos hijos */
         border-radius: 8px;
-        padding: 16px;
         border: 2px solid $color-white;
+        overflow: hidden; /* Asegura que nada salga del contenedor */
         transition: all linear .3s;
+
+        .card__image {
+            width: 100%;
+            height: auto;
+        }
+
+        .card__info {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 75%;
+            background: linear-gradient(to bottom, #000000b3, #07070a);
+            color: white;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            opacity: 0;
+            transition: opacity 0.3s ease-in-out;
+        }
     }
 
-    &__card:hover {
-        background-color: $color-red;
-        border: 2px solid $color-red;
-        
-        h2 {
-            color: $color-white !important;
-        }
+    &__card:hover .card__info {
+        opacity: 1;
+    }
+
+    &__card:hover h2 {
+        color: $color-white !important;
     }
 }
