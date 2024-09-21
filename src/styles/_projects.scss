@@ -13,22 +13,55 @@
         .card__image {
             width: 100%;
             height: auto;
+            position: relative;
+
+            .card__info {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background: linear-gradient(to top, #07070a, #af3453c2);
+                color: white;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                opacity: 0;
+                transition: opacity 0.3s ease-in-out;
+    
+                p {
+                    font-weight: bold;
+                    width: 80%;
+                    margin: 0 auto;
+                    text-align: justify;
+                }
+    
+                .info__languages {
+                    ul {
+                        list-style: none;
+                        display: flex;
+                        align-items: center;
+                        gap: 1rem;
+                    }
+                }
+            }
         }
 
-        .card__info {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 75%;
-            background: linear-gradient(to bottom, #000000b3, #07070a);
-            color: white;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            opacity: 0;
-            transition: opacity 0.3s ease-in-out;
+        
+
+        article {
+            a i {
+                transition: color .2s linear;
+            }
+
+            a i:hover {
+                color: $color-red;
+            }
+        }
+
+        h2 {
+            cursor: default;
         }
     }
 

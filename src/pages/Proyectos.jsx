@@ -1,12 +1,12 @@
 import ProjectCard from "../components/ProjectCard";
 
 const projects = [
-    { id: 1, title: "Proyecto 1", description: "Descripción del proyecto 1", languages: ["JS", "HTML"], image: "assets/img/fakeStore.png" },
-    { id: 2, title: "Proyecto 2", description: "Descripción del proyecto 2", languages: ["REACT", "HTML", "CSS"], image: "assets/img/fakeStore.png" },
-    { id: 3, title: "Proyecto 3", description: "Descripción del proyecto 3", languages: ["Symfony", "SASS"], image: "assets/img/fakeStore.png" },
-    { id: 4, title: "Proyecto 4", description: "Descripción del proyecto 4", languages: ["Symfony", "SASS"], image: "assets/img/fakeStore.png" },
-    { id: 5, title: "Proyecto 5", description: "Descripción del proyecto 5", languages: ["Symfony", "SASS"], image: "assets/img/fakeStore.png" },
-    { id: 6, title: "Proyecto 6", description: "Descripción del proyecto 6", languages: ["Symfony", "SASS"], image: "assets/img/fakeStore.png" },
+    { id: 1, title: "Fake Store", description: "Tienda Online haciendo uso de la API 'FakeStore'.", languages: ["javascript", "html5", "css3"], image: "assets/img/fakeStore.png", link: "https://raulxag.github.io/fakeStore/" },
+    { id: 2, title: "Portafolio Bento Grid", description: "Portafolio maquetado con bento grid estilo Apple.", languages: ["sass", "html5", "css3"], image: "assets/img/portafolio-sass.png", link: "https://raulxag.github.io/portafolio/" },
+    { id: 3, title: "Monstedex", description: "Una enciclopedia de los monstruos del videojuego 'Monster Hunter'.", languages: ["vite", "react", "html5", "css3"], image: "assets/img/monstedex.png", link: "https://raulxag.github.io/ReactApp/" },
+    { id: 4, title: "Confeti Mario Block", description: "Web simple haciendo uso de una libreria para crear un efecto de confeti.", languages: ["javascript", "html5", "css3"], image: "assets/img/mario-block.png", link: "https://raulxag.github.io/JS_ConfettiEffect/" },
+    { id: 5, title: "Blog", description: "Un proyecto de blog simple proveniente del curso 'Master en CSS3' de Víctor Robles.", languages: ["css3", "html5"], image: "assets/img/blog.png", link: "https://raulxag.github.io/blog/" },
+    { id: 6, title: "Reservas restaurante", description: "Simulación de web de reservas de un restaurante.", languages: ["sass", "html5", "css3"], image: "assets/img/restaurante.png", link: "https://raulxag.github.io/proyecto-sass-restaurante/" },
     // Agrega más proyectos aquí
 ];
 

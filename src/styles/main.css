@@ -242,14 +242,15 @@ main .projects .projects__grid .projects__grid__card:hover img {
 .projects__card .card__image {
   width: 100%;
   height: auto;
+  position: relative;
 }
-.projects__card .card__info {
+.projects__card .card__image .card__info {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
-  height: 75%;
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.7019607843), #07070a);
+  height: 100%;
+  background: linear-gradient(to top, #07070a, rgba(175, 52, 83, 0.7607843137));
   color: white;
   display: flex;
   flex-direction: column;
@@ -257,6 +258,27 @@ main .projects .projects__grid .projects__grid__card:hover img {
   align-items: center;
   opacity: 0;
   transition: opacity 0.3s ease-in-out;
+}
+.projects__card .card__image .card__info p {
+  font-weight: bold;
+  width: 80%;
+  margin: 0 auto;
+  text-align: justify;
+}
+.projects__card .card__image .card__info .info__languages ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.projects__card article a i {
+  transition: color 0.2s linear;
+}
+.projects__card article a i:hover {
+  color: #DA4167;
+}
+.projects__card h2 {
+  cursor: default;
 }
 .projects__card:hover .card__info {
   opacity: 1;
