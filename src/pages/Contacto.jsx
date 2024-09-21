@@ -1,89 +1,66 @@
 import { useForm } from 'react-hook-form';
-import emailjs from 'emailjs-com';
 
 export default function Contacto({ t }) {
-      const { register, handleSubmit, formState: { errors }, reset } = useForm();
-    
-      const onSubmit = async (data) => {
-        try {
-          const serviceID = 'portafolio-react';
-          const templateID = 'portafolio-react';
+  const { register, handleSubmit, formState: { errors }, reset } = useForm();
 
-          emailjs.init({
-            publicKey: 'k0YNNH3Wp6QCQrzRI',
-            // Do not allow headless browsers
-            blockHeadless: true,
-            blockList: {
-              // Block the suspended emails
-              list: ['foo@emailjs.com', 'bar@emailjs.com'],
-              // The variable contains the email address
-              watchVariable: 'userEmail',
-            },
-            limitRate: {
-              // Set the limit rate for the application
-              id: 'Outlook',
-              // Allow 1 request per 10s
-              throttle: 10000,
-            },
-          });
-    
-          var templateParams = {
-            name: 'hola',
-            notes: 'Check this out!',
-          };
-    
-          const response = await emailjs.send(serviceID, templateID, templateParams);
-    
-          if (response.status === 200) {
-            alert('Correo enviado con éxito');
-            reset(); // Reinicia el formulario tras enviar el correo
-          }
-        } catch (error) {
-          console.error('Error enviando correo:', error);
-          alert('Error enviando el correo');
-        }
-      };
+  const onSubmit = (data) => {
+    window.Email.send({
+      SecureToken: "your-secure-token", // Puedes generar un SecureToken desde https://smtpjs.com
+      To: 'raul.arrgon@outlook.es', // Cambia esto al correo donde quieres recibir los emails
+      From: data.email, // Correo del remitente (el usuario)
+      Subject: `Mensaje de ${data.name}`,
+      Body: data.message,
+    })
+    .then((message) => {
+      alert("Correo enviado exitosamente!");
+      reset(); // Resetear el formulario después de enviarlo
+    })
+    .catch((error) => alert("Error al enviar el correo: " + error));
+  };
 
-    return (
-        <>
-            <main>
-                <form onSubmit={handleSubmit(onSubmit)} className="contact-form">
-                    <div>
-                        <label>Nombre</label>
-                        <input 
-                        type="text"
-                        {...register('name', { required: 'El nombre es requerido' })}
-                        />
-                        {errors.name && <span>{errors.name.message}</span>}
-                    </div>
+  return (
+    <>
+        <header className="pt-5">
+            <h1 className="py-4 text-center">{t('contact')}</h1>
+        </header>
+
+        <main className="d-flex align-items-center justify-content-center">
+            <form onSubmit={handleSubmit(onSubmit)} className="pt-5">
+                <div className="d-flex flex-column">
+                    <label>Nombre<span className="text-danger">*</span></label>
+                    <input
+                    type="text"
+                    {...register('name', { required: "Este campo es requerido" })}
+                    />
+                    {errors.name && <span className="text-warning">{errors.name.message}</span>}
+                </div>
+                
+                <div className="d-flex flex-column">
+                    <label>Email<span className="text-danger">*</span></label>
+                    <input
+                    type="email"
+                    {...register('email', {
+                        required: "Este campo es requerido",
+                        pattern: {
+                        value: /^\S+@\S+$/i,
+                        message: "Formato de correo no válido"
+                        }
+                    })}
+                    />
+                    {errors.email && <span className="text-warning">{errors.email.message}</span>}
+                </div>
+                
+                <div className="d-flex flex-column">
+                    <label>Mensaje<span className="text-danger">*</span></label>
+                    <textarea
+                    {...register('message', { required: "Este campo es requerido" })}
+                    />
+                    {errors.message && <span className="text-warning">{errors.message.message}</span>}
+                </div>
                     
-                    <div>
-                        <label>Email</label>
-                        <input 
-                        type="email" 
-                        {...register('email', { 
-                            required: 'El email es requerido',
-                            pattern: {
-                            value: /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/,
-                            message: 'Formato de email no válido'
-                            }
-                        })}
-                        />
-                        {errors.email && <span>{errors.email.message}</span>}
-                    </div>
-                    
-                    <div>
-                        <label>Mensaje</label>
-                        <textarea 
-                        {...register('message', { required: 'El mensaje es requerido' })}
-                        />
-                        {errors.message && <span>{errors.message.message}</span>}
-                    </div>
-                    
-                    <button type="submit">Enviar</button>
-                </form>
-            </main>
-            
-        </>
-    );
+                <button className="mt-2" type="submit">Enviar</button>
+            </form>
+        </main>
+    </>
+  );
 }
