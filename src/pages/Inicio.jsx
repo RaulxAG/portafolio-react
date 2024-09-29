@@ -15,7 +15,7 @@ export default function Inicio({ t }) {
       </section>
 
       <main>
-        <section className="about m-auto my-5 pb-5">
+        <section className="about m-auto my-5 pb-2">
           <h2>{t('about')}</h2>
 
           <div className="d-flex gap-5">
@@ -28,6 +28,10 @@ export default function Inicio({ t }) {
           </div>
         </section>
 
+        <section className="certifications m-auto pb-5">
+          <h2>{t('certifications')}</h2>
+          <div className="certifications__timeline"></div>
+        </section>
         {/* <section className="section-abilities my-5 py-4">
 
           <section className="abilities m-auto">

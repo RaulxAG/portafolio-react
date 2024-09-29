@@ -8,7 +8,7 @@ export default function Menu({ t }) {
                         <h1 className="m-0 p-0 fs-5">Raul Arroyo</h1>
                         <h2 className="m-0 p-0">{t('job')}</h2>
                     </header>
-
+                    
                     <ul className="p-0 m-0 d-flex align-items-center justify-content-center gap-3">
                         <li>
                             <a href="/portafolio-react/">{t('home')}</a>
