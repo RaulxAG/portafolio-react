@@ -74,6 +74,12 @@ main {
 
                     p {
                         font-size: xx-large;
+
+                        span {
+                            color: $color-red;
+                            font-weight: bold;
+                            display: block;
+                        }
                     }
 
                     .item__certs {
@@ -90,10 +96,16 @@ main {
 
                                 img {
                                     position: absolute;
-                                    top: -40px;
-                                    left: 0;
+                                    top: -30px;
+                                    left: -50px;
                                     filter: opacity(0);
                                     transition: ease-in .5s;
+                                }
+
+                                span {
+                                    color: $color-red;
+                                    font-weight: bold;
+                                    display: block;
                                 }
             
                                 i {
@@ -135,7 +147,7 @@ main {
 
                     .item__certs {
                         position: absolute;
-                        top: -75px;
+                        top: -95px;
                     }
                 }
 

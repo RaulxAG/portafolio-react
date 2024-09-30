@@ -39,30 +39,32 @@ export default function Inicio({ t }) {
               <article className="line__item">
                 <p className="fs-1">2022</p>
                 <ul className="item__certs d-flex flex-row gap-4">
-                  <li><p className="fs-6">CFGM - Sistemas Microinformáticos y Redes</p></li>
+                  <li><p className="fs-6"><span>CFGM</span>Sistemas Microinformáticos y Redes</p></li>
+                  <li><p className="fs-6"><span>Cisco</span>Networking Essentials</p></li>
+                  <li><p className="fs-6"><span>Openwebinars</span>Introducción a docker</p></li>
                 </ul>
               </article>
 
               <article className="line__item">
                 <p className="fs-1">2024</p>
                 <ul className="item__certs d-flex flex-row gap-4">
-                  <li><p className="fs-6">CFGS - Desarollo de Aplicaciones Web</p></li>
+                  <li><p className="fs-6"><span>CFGS</span>Desarollo de Aplicaciones Web</p></li>
                   <li>
                     <a className="enlace fs-6" href="https://www.credly.com/badges/67e6d145-4d76-48cb-b2ff-082e39235b7b/public_url" target="_blank" rel="noopener noreferrer">
                       <img src="https://images.credly.com/images/73e4a58b-a8ef-41a3-a7db-9183dd269882/image.png" alt="Foto" width="100"/>
-                      AWS - Cloud Foundations <i class="fa-solid fa-up-right-from-square"></i>
+                      <span>AWS</span>Cloud Foundations <i class="fa-solid fa-up-right-from-square"></i>
                     </a>
                   </li>
                   <li>
                     <a className="enlace fs-6" href="https://www.credly.com/badges/7c346508-bb00-41b5-a767-6f39cf7e1c4d/public_url" target="_blank" rel="noopener noreferrer">
                       <img src="https://images.credly.com/size/340x340/images/0590787c-66c7-46be-be18-bbfcf16c795b/image.png" alt="Foto" width="100"/>
-                      AWS - Cloud Data Pipeline Builder <i class="fa-solid fa-up-right-from-square"></i>
+                      <span>AWS</span>Cloud Data Pipeline Builder <i class="fa-solid fa-up-right-from-square"></i>
                     </a>
                   </li>
                   <li>
                     <a className="enlace fs-6" href="https://www.credly.com/badges/39bb0904-baba-42ef-a583-ce9b8fe1b8a2/public_url" target="_blank" rel="noopener noreferrer">
                       <img src="https://images.credly.com/size/340x340/images/119182cf-ca68-495a-a415-bff62dfdcc7e/image.png" alt="Foto" width="100"/>
-                      AWS - Cloud Developing <i class="fa-solid fa-up-right-from-square"></i>
+                      <span>AWS</span>Cloud Developing <i class="fa-solid fa-up-right-from-square"></i>
                     </a>
                   </li>
                 </ul>

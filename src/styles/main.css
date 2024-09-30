@@ -156,6 +156,11 @@ main .certifications .certifications__timeline .timeline__line .line__item {
 main .certifications .certifications__timeline .timeline__line .line__item p {
   font-size: xx-large;
 }
+main .certifications .certifications__timeline .timeline__line .line__item p span {
+  color: #DA4167;
+  font-weight: bold;
+  display: block;
+}
 main .certifications .certifications__timeline .timeline__line .line__item .item__certs {
   position: absolute;
   list-style: none;
@@ -170,10 +175,15 @@ main .certifications .certifications__timeline .timeline__line .line__item .item
 }
 main .certifications .certifications__timeline .timeline__line .line__item .item__certs li a img {
   position: absolute;
-  top: -40px;
-  left: 0;
+  top: -30px;
+  left: -50px;
   filter: opacity(0);
   transition: ease-in 0.5s;
+}
+main .certifications .certifications__timeline .timeline__line .line__item .item__certs li a span {
+  color: #DA4167;
+  font-weight: bold;
+  display: block;
 }
 main .certifications .certifications__timeline .timeline__line .line__item .item__certs li a i {
   font-size: small;
@@ -205,7 +215,7 @@ main .certifications .certifications__timeline .timeline__line .line__item:nth-c
 }
 main .certifications .certifications__timeline .timeline__line .line__item:nth-child(1) .item__certs {
   position: absolute;
-  top: -75px;
+  top: -95px;
 }
 main .certifications .certifications__timeline .timeline__line .line__item:nth-child(2) {
   right: -300px;
