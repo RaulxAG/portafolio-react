@@ -121,8 +121,9 @@ nav section ul li a:hover {
   color: #DA4167;
 }
 
-main .about {
+main .about, main .certifications {
   width: 65%;
+  padding-block: 0.5rem;
 }
 main .about img {
   object-fit: contain;
@@ -132,68 +133,101 @@ main .about article {
   font-size: 1.3rem;
   text-align: justify;
 }
-main .section-abilities {
-  background-color: #e7e7e7;
+main .certifications {
+  overflow-x: scroll;
+  margin-bottom: 20rem !important;
 }
-main .section-abilities .abilities {
-  width: 65%;
+main .certifications .certifications__timeline {
+  height: 45vh;
+  padding-block: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-main .section-abilities .abilities .abilities__grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-  justify-items: center;
+main .certifications .certifications__timeline .timeline__line {
+  height: 1.5vh;
+  width: 100%;
+  background-color: #DA4167;
+  display: flex;
 }
-main .section-abilities .abilities .abilities__grid figure {
-  padding: 0.5rem;
-  border-radius: 50%;
-  transition: all 0.3s linear;
-}
-main .section-abilities .abilities .abilities__grid figure:hover {
-  box-shadow: 0 0 30px 1px #DA4167;
-}
-main .section-abilities .abilities .abilities__grid figure img {
-  width: 50px;
-  height: 50px;
-  object-fit: contain;
-  display: block;
-  margin: 0 auto;
-}
-main .projects {
-  width: 65%;
-}
-main .projects .projects__grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-  justify-items: center;
-  gap: 0.5rem;
-}
-main .projects .projects__grid .projects__grid__card {
-  border-radius: 10px;
-  height: 200px;
-  background-color: #24272B;
+main .certifications .certifications__timeline .timeline__line .line__item {
   position: relative;
 }
-main .projects .projects__grid .projects__grid__card img {
-  width: 100%;
-  object-fit: contain;
-  transition: all 0.3s linear;
+main .certifications .certifications__timeline .timeline__line .line__item p {
+  font-size: xx-large;
 }
-main .projects .projects__grid .projects__grid__card article {
-  text-align: justify;
+main .certifications .certifications__timeline .timeline__line .line__item .item__certs {
   position: absolute;
-  top: 0;
+  list-style: none;
+}
+main .certifications .certifications__timeline .timeline__line .line__item .item__certs li {
+  width: 130px;
+  text-align: center;
+}
+main .certifications .certifications__timeline .timeline__line .line__item .item__certs li a {
+  text-decoration: none;
+  position: relative;
+}
+main .certifications .certifications__timeline .timeline__line .line__item .item__certs li a img {
+  position: absolute;
+  top: -40px;
   left: 0;
-  z-index: -1;
-  color: #e7e7e7;
-  font-weight: bold;
-  transition: all 0.3s linear;
+  filter: opacity(0);
+  transition: ease-in 0.5s;
 }
-main .projects .projects__grid .projects__grid__card:hover article {
-  z-index: 1;
+main .certifications .certifications__timeline .timeline__line .line__item .item__certs li a i {
+  font-size: small;
+  transition: linear 0.3s;
 }
-main .projects .projects__grid .projects__grid__card:hover img {
-  transform: scale(1.05);
-  filter: brightness(0.15);
+main .certifications .certifications__timeline .timeline__line .line__item .item__certs li a:hover {
+  text-decoration: underline 2px solid #DA4167;
+}
+main .certifications .certifications__timeline .timeline__line .line__item .item__certs li a:hover img {
+  transform: translateY(-55px);
+  filter: opacity(1);
+}
+main .certifications .certifications__timeline .timeline__line .line__item .item__certs li a:hover i {
+  color: #DA4167;
+}
+main .certifications .certifications__timeline .timeline__line .line__item:nth-child(1) {
+  right: -10px;
+  bottom: 100px;
+}
+main .certifications .certifications__timeline .timeline__line .line__item:nth-child(1)::after {
+  content: "";
+  background-color: #DA4167;
+  position: absolute;
+  width: 7px;
+  height: 50px;
+  margin: 0 auto;
+  bottom: -90px;
+  left: 50%;
+}
+main .certifications .certifications__timeline .timeline__line .line__item:nth-child(1) .item__certs {
+  position: absolute;
+  top: -75px;
+}
+main .certifications .certifications__timeline .timeline__line .line__item:nth-child(2) {
+  right: -300px;
+  top: 50px;
+}
+main .certifications .certifications__timeline .timeline__line .line__item:nth-child(2)::after {
+  content: "";
+  background-color: #DA4167;
+  position: absolute;
+  width: 7px;
+  height: 50px;
+  margin: 0 auto;
+  bottom: 0;
+  left: 50%;
+}
+main .certifications .certifications__timeline .timeline__line .line__item:nth-child(2) .item__certs {
+  position: absolute;
+  list-style: none;
+}
+main .certifications .certifications__timeline .timeline__line .line__item:nth-child(2) .item__certs li {
+  width: 130px;
+  text-align: center;
 }
 
 @media screen and (max-width: 767px) {

@@ -15,7 +15,7 @@ export default function Inicio({ t }) {
       </section>
 
       <main>
-        <section className="about m-auto my-5 pb-2">
+        <section className="about m-auto mt-5 mb-3">
           <h2>{t('about')}</h2>
 
           <div className="d-flex gap-5">
@@ -28,89 +28,56 @@ export default function Inicio({ t }) {
           </div>
         </section>
 
-        <section className="certifications m-auto pb-5">
-          <h2>{t('certifications')}</h2>
-          <div className="certifications__timeline"></div>
+        <section className="about m-auto">
+          <h2 className="p-0 m-0">{t('certifications')}</h2>
         </section>
-        {/* <section className="section-abilities my-5 py-4">
 
-          <section className="abilities m-auto">
-            <h2>{t('skills')}</h2>
+        <section className="certifications m-auto my-5">
+          
+          <div className="certifications__timeline">
+            <div className="timeline__line">
+              <article className="line__item">
+                <p className="fs-1">2022</p>
+                <ul className="item__certs d-flex flex-row gap-4">
+                  <li><p className="fs-6">CFGM - Sistemas Microinformáticos y Redes</p></li>
+                </ul>
+              </article>
 
-            <section className="abilities__grid mt-4">
-              <figure>
-                <img src="assets/img/technologies/mysql.svg" alt="MySQL" title="MySQL" />
-              </figure>
+              <article className="line__item">
+                <p className="fs-1">2024</p>
+                <ul className="item__certs d-flex flex-row gap-4">
+                  <li><p className="fs-6">CFGS - Desarollo de Aplicaciones Web</p></li>
+                  <li>
+                    <a className="enlace fs-6" href="https://www.credly.com/badges/67e6d145-4d76-48cb-b2ff-082e39235b7b/public_url" target="_blank" rel="noopener noreferrer">
+                      <img src="https://images.credly.com/images/73e4a58b-a8ef-41a3-a7db-9183dd269882/image.png" alt="Foto" width="100"/>
+                      AWS - Cloud Foundations <i class="fa-solid fa-up-right-from-square"></i>
+                    </a>
+                  </li>
+                  <li>
+                    <a className="enlace fs-6" href="https://www.credly.com/badges/7c346508-bb00-41b5-a767-6f39cf7e1c4d/public_url" target="_blank" rel="noopener noreferrer">
+                      <img src="https://images.credly.com/size/340x340/images/0590787c-66c7-46be-be18-bbfcf16c795b/image.png" alt="Foto" width="100"/>
+                      AWS - Cloud Data Pipeline Builder <i class="fa-solid fa-up-right-from-square"></i>
+                    </a>
+                  </li>
+                  <li>
+                    <a className="enlace fs-6" href="https://www.credly.com/badges/39bb0904-baba-42ef-a583-ce9b8fe1b8a2/public_url" target="_blank" rel="noopener noreferrer">
+                      <img src="https://images.credly.com/size/340x340/images/119182cf-ca68-495a-a415-bff62dfdcc7e/image.png" alt="Foto" width="100"/>
+                      AWS - Cloud Developing <i class="fa-solid fa-up-right-from-square"></i>
+                    </a>
+                  </li>
+                </ul>
+              </article>
 
-              <figure>
-                <img src="assets/img/technologies/aws.svg" alt="Amazon Web Services" title="Amazon Web Services" />
-              </figure>
+              {/* <article className="line__item">
+                <p className="fs-1">2025</p>
+              </article>
 
-              <figure>
-                <img src="assets/img/technologies/css3.svg" alt="CSS 3" title="CSS3" />
-              </figure>
-
-              <figure>
-              <img src="assets/img/technologies/html5.svg" alt="HTML 5" title="HTML5" />
-              </figure>
-
-              <figure>
-                <img className="rounded" src="assets/img/technologies/javascript.svg" alt="JavaScript" title="JavaScript" />
-              </figure>
-
-              <figure>
-              <img src="assets/img/technologies/django.svg" alt="Django" title="Django" />
-              </figure>
-              
-              <figure>
-                <img src="assets/img/technologies/docker.svg" alt="Docker" title="Docker" />
-              </figure>
-
-              <figure>
-                <img src="assets/img/technologies/php.svg" alt="PHP" title="PHP" />
-              </figure>
-
-              <figure>
-                <img src="assets/img/technologies/python.svg" alt="Python" title="Python" />
-              </figure>
-
-              <figure>
-                <img src="assets/img/technologies/react.svg" alt="React" title="React" />
-              </figure>
-
-              <figure>
-                <img src="assets/img/technologies/sass.svg" alt="Sass" title="SASS" />
-              </figure>
-
-              <figure>
-                <img src="assets/img/technologies/symfony.svg" alt="Symfony" title="Symfony" />
-              </figure>
-
-              <figure>
-                <img src="assets/img/technologies/java.svg" alt="Java" title="Java" />
-              </figure>
-
-              <figure>
-                <img src="assets/img/technologies/figma.svg" alt="Figma" title="Figma" />
-              </figure>
-
-              <figure>
-                <img src="assets/img/technologies/git.svg" alt="Git" title="Git" />
-              </figure>
-            </section>
-          </section>
-        </section> */}
-
-        {/* <section className="projects m-auto mt-1">
-          <h2>{t('projects')}</h2>
-
-          <section className="projects__grid mt-4">
-            <CardProject project={"monstedex"} />
-            <CardProject project={"fakeStore"} />
-            <CardProject project={"monstedex"} />
-            <CardProject project={"fakeStore"} />
-          </section>
-        </section> */}
+              <article className="line__item">
+                <p className="fs-1">...</p>
+              </article> */}
+            </div>
+          </div>
+        </section>
       </main>
     </>
   )

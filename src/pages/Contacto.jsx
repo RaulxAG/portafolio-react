@@ -4,7 +4,7 @@ export default function Contacto({ t }) {
   const { register, handleSubmit, formState: { errors }, reset } = useForm();
 
   const onSubmit = (data) => {
-    let token = "12029c05-de53-4b22-ad1c-0034499a6dd6";
+    let token = "";
 
     window.Email.send({
       SecureToken: token, // Puedes generar un SecureToken desde https://smtpjs.com
