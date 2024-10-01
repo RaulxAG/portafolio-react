@@ -33,8 +33,9 @@
 }
 
 main {
+    // padding-bottom: 20rem;
 
-    .about, .certifications {
+    .about, .certifications, .skills__content {
         width: 65%;
         padding-block: .5rem;
     }
@@ -53,7 +54,6 @@ main {
 
     .certifications {
         overflow-x: scroll;
-        margin-bottom: 20rem !important;
 
         .certifications__timeline {
             // width: 100vw;
@@ -200,6 +200,20 @@ main {
             }
         }
     }
+
+    .skills {
+        background-color: $color-primary-dark;
+
+        .carousel-item section {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+            justify-items: center;
+            align-content: center;
+            gap: 1.2rem;
+            padding-inline: 8rem;
+        }
+        
+    }
 }
 
 @media screen and (max-width: 767px) {
@@ -218,7 +232,7 @@ main {
     }
 
     main {
-        .about, .abilities {
+        .about {
             width: 90%;
         }
 
@@ -240,9 +254,23 @@ main {
             }
         }
 
-        .abilities {
+        .skills {
             text-align: center;
-            padding-bottom: 3rem;
+            width: 100%;
+
+            .skills__content {
+                margin: 0 auto!important;
+                width: 100%;
+            }
+
+            .carousel-item section {
+                grid-template-columns: repeat(auto-fit, minmax(90px, 1fr));
+                padding-inline: 2.2rem;
+
+                img {
+                    width: 50px !important;
+                }
+            }
         }
     }    
 }

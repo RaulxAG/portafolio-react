@@ -1,7 +1,7 @@
 import { useForm } from 'react-hook-form';
 
 export default function Contacto({ t }) {
-  const { register, handleSubmit, formState: { errors }, reset } = useForm();
+  const { register, handleSubmit, formState: { errors } } = useForm();
 
   const onSubmit = (data) => {
     let token = "";

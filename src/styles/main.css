@@ -20,6 +20,12 @@
   box-sizing: border-box;
 }
 
+.fondo-logo {
+  background-color: #e7e7e7;
+  border-radius: 50%;
+  padding: 0.3rem;
+}
+
 html > body {
   background-color: #07070A;
   color: #e7e7e7;
@@ -34,8 +40,9 @@ html > body a {
 html > body .btn-link {
   background-color: #24272B;
   position: fixed;
-  bottom: 15px;
-  right: 15px;
+  bottom: 40px;
+  right: 40px;
+  border: 2px solid #e7e7e7;
 }
 html > body .btn-link:hover {
   background-color: #DA4167;
@@ -121,7 +128,7 @@ nav section ul li a:hover {
   color: #DA4167;
 }
 
-main .about, main .certifications {
+main .about, main .certifications, main .skills__content {
   width: 65%;
   padding-block: 0.5rem;
 }
@@ -135,7 +142,6 @@ main .about article {
 }
 main .certifications {
   overflow-x: scroll;
-  margin-bottom: 20rem !important;
 }
 main .certifications .certifications__timeline {
   height: 45vh;
@@ -239,6 +245,17 @@ main .certifications .certifications__timeline .timeline__line .line__item:nth-c
   width: 130px;
   text-align: center;
 }
+main .skills {
+  background-color: #24272B;
+}
+main .skills .carousel-item section {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  justify-items: center;
+  align-content: center;
+  gap: 1.2rem;
+  padding-inline: 8rem;
+}
 
 @media screen and (max-width: 767px) {
   .title {
@@ -250,7 +267,7 @@ main .certifications .certifications__timeline .timeline__line .line__item:nth-c
   .title article p:last-child {
     font-size: 1.8rem;
   }
-  main .about, main .abilities {
+  main .about {
     width: 90%;
   }
   main .about {
@@ -267,9 +284,20 @@ main .certifications .certifications__timeline .timeline__line .line__item:nth-c
   main .about div img {
     width: 30%;
   }
-  main .abilities {
+  main .skills {
     text-align: center;
-    padding-bottom: 3rem;
+    width: 100%;
+  }
+  main .skills .skills__content {
+    margin: 0 auto !important;
+    width: 100%;
+  }
+  main .skills .carousel-item section {
+    grid-template-columns: repeat(auto-fit, minmax(90px, 1fr));
+    padding-inline: 2.2rem;
+  }
+  main .skills .carousel-item section img {
+    width: 50px !important;
   }
 }
 .projects {

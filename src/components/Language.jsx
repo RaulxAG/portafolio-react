@@ -17,7 +17,7 @@ export default function Language() {
                 <img 
                     src={currentLang === 'en' ? 'assets/img/flag-es.png' : 'assets/img/flag-en.png'} 
                     alt={currentLang === 'en' ? 'Cambiar a Español' : 'Change to English'}
-                    style={{ width: '20px', height: '20px' }}
+                    style={{ width: '50px', height: '50px' }}
                 />
             </button>        
         </>

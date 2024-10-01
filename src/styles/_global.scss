@@ -4,6 +4,12 @@
     box-sizing: border-box;
 }
 
+.fondo-logo {
+    background-color: $color-white;
+    border-radius: 50%;
+    padding: .3rem;
+}
+
 html > body {
     background-color: $color-primary;
     color: $color-white;
@@ -20,8 +26,9 @@ html > body {
     .btn-link{
         background-color: $color-primary-dark;
         position: fixed;
-        bottom: 15px;
-        right: 15px;
+        bottom: 40px;
+        right: 40px;
+        border: 2px solid $color-white;
 
         &:hover {
             background-color: $color-red;
