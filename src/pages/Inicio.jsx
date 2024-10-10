@@ -28,11 +28,11 @@ export default function Inicio({ t }) {
           </div>
         </section>
 
-        <section className="about m-auto">
+        <section className="about m-auto mt-5">
           <h2 className="p-0 m-0">{t('certifications')}</h2>
         </section>
 
-        <section className="certifications m-auto my-5 py-5">
+        <section className="certifications m-auto mt-2 mb-5 py-5">
           
           <div className="certifications__timeline">
             <div className="timeline__line">
@@ -82,7 +82,7 @@ export default function Inicio({ t }) {
         </section>
 
         <div className="skills py-3 pb-5">
-          <section className="skills__content m-auto">
+          <section className="skills__content m-auto mb-4">
             <h2>{t('skills')}</h2>
 
             <div id="carouselExampleAutoplaying" className="carousel slide pt-3 pb-5" data-bs-ride="carousel">
@@ -151,7 +151,13 @@ export default function Inicio({ t }) {
               </button>
             </div>
           </section>
+
+          <section className="more m-auto py-3 pb-5">
+            <h2 className="p-0 m-0">{t('more')}</h2>
+          </section>
         </div>
+
+        
       </main>
     </>
   )

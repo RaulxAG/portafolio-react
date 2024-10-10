@@ -56,7 +56,6 @@ main {
         overflow-x: scroll;
 
         .certifications__timeline {
-            // width: 100vw;
             height: 45vh;
             padding-block: 2rem;
             display: flex;
@@ -212,9 +211,29 @@ main {
             gap: 1.2rem;
             padding-inline: 8rem;
         }
+
+        .more {
+            width: 65%;
+        }
         
     }
 }
+
+/* ANIMATIONS */
+main {
+    .about:nth-child(2), .certifications {
+        animation: appear-translate linear;
+        animation-timeline: view();
+        animation-range: entry 0% cover 40%;
+    }
+
+    .skills__content, .more {
+        animation: appear-scale linear;
+        animation-timeline: view();
+        animation-range: entry 0% cover 40%;
+    }
+}
+
 
 @media screen and (max-width: 767px) {
     .title {
@@ -229,6 +248,10 @@ main {
                 font-size: 1.8rem;
             }
         }
+    }
+
+    .certifications__timeline {
+        width: 100vh;
     }
 
     main {

@@ -14,6 +14,26 @@
   animation: bounce 2.5s ease-in infinite;
 }
 
+@keyframes appear-translate {
+  from {
+    opacity: 0;
+    transform: translateX(-100%);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+@keyframes appear-scale {
+  from {
+    opacity: 0;
+    scale: 0.5;
+  }
+  to {
+    opacity: 1;
+    scale: 1;
+  }
+}
 * {
   margin: 0;
   padding: 0;
@@ -256,6 +276,21 @@ main .skills .carousel-item section {
   gap: 1.2rem;
   padding-inline: 8rem;
 }
+main .skills .more {
+  width: 65%;
+}
+
+/* ANIMATIONS */
+main .about:nth-child(2), main .certifications {
+  animation: appear-translate linear;
+  animation-timeline: view();
+  animation-range: entry 0% cover 40%;
+}
+main .skills__content, main .more {
+  animation: appear-scale linear;
+  animation-timeline: view();
+  animation-range: entry 0% cover 40%;
+}
 
 @media screen and (max-width: 767px) {
   .title {
@@ -266,6 +301,9 @@ main .skills .carousel-item section {
   }
   .title article p:last-child {
     font-size: 1.8rem;
+  }
+  .certifications__timeline {
+    width: 100vh;
   }
   main .about {
     width: 90%;
