@@ -214,6 +214,29 @@ main {
 
         .more {
             width: 65%;
+
+            .more__grid {
+                display: grid;
+                grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+                justify-items: center;
+                align-content: center;
+                gap: 1.2rem;
+
+                a {
+                    border: .5px solid $color-secondary;
+                    border-radius: 8px;
+                    transition: all .4s linear;
+                    text-decoration: none;
+
+                    &:hover {
+                        border: 5px solid $color-red;
+                        color: $color-red;
+                        font-size: x-large;
+                        gap: 0 !important;
+                        // background-color: $color-secondary;
+                    }
+                }
+            }
         }
         
     }
