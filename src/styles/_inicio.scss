@@ -222,7 +222,7 @@ main {
                 align-content: center;
                 gap: 1.2rem;
 
-                a {
+                &>a {
                     border: .5px solid $color-secondary;
                     border-radius: 8px;
                     transition: all .4s linear;

@@ -286,13 +286,13 @@ main .skills .more .more__grid {
   align-content: center;
   gap: 1.2rem;
 }
-main .skills .more .more__grid a {
+main .skills .more .more__grid > a {
   border: 0.5px solid #4A525A;
   border-radius: 8px;
   transition: all 0.4s linear;
   text-decoration: none;
 }
-main .skills .more .more__grid a:hover {
+main .skills .more .more__grid > a:hover {
   border: 5px solid #DA4167;
   color: #DA4167;
   font-size: x-large;
