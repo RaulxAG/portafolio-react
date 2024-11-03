@@ -23,7 +23,7 @@ html > body {
         color: $color-white;
     }
 
-    .btn-link{
+    .btn-link {
         background-color: $color-primary-dark;
         position: fixed;
         bottom: 40px;
@@ -38,11 +38,27 @@ html > body {
             background-color: $color-orange !important;
         }
     }
+
+    .btn-link2 {
+        background-color: $color-primary-dark;
+        position: fixed;
+        bottom: 40px;
+        left: 40px;
+        border: 2px solid $color-white;
+
+        &:hover {
+            background-color: $color-red;
+        }
+
+        &:active {
+            background-color: $color-orange !important;
+        }
+    }
 }
 
 @media screen and (max-width: 767px) {
     html > body {
-        .btn-link {
+        .btn-link, .btn-link2 {
             bottom: 70px;
         }
 

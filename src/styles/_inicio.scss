@@ -221,12 +221,14 @@ main {
                 justify-items: center;
                 align-content: center;
                 gap: 1.2rem;
+                margin-bottom: 3rem;
 
                 &>a {
                     border: .5px solid $color-secondary;
                     border-radius: 8px;
                     transition: all .4s linear;
                     text-decoration: none;
+                    padding-block: 3rem;
 
                     &:hover {
                         border: 5px solid $color-red;

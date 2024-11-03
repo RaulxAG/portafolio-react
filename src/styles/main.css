@@ -70,9 +70,22 @@ html > body .btn-link:hover {
 html > body .btn-link:active {
   background-color: #E59F71 !important;
 }
+html > body .btn-link2 {
+  background-color: #24272B;
+  position: fixed;
+  bottom: 40px;
+  left: 40px;
+  border: 2px solid #e7e7e7;
+}
+html > body .btn-link2:hover {
+  background-color: #DA4167;
+}
+html > body .btn-link2:active {
+  background-color: #E59F71 !important;
+}
 
 @media screen and (max-width: 767px) {
-  html > body .btn-link {
+  html > body .btn-link, html > body .btn-link2 {
     bottom: 70px;
   }
   html > body .projects {
@@ -285,12 +298,14 @@ main .skills .more .more__grid {
   justify-items: center;
   align-content: center;
   gap: 1.2rem;
+  margin-bottom: 3rem;
 }
 main .skills .more .more__grid > a {
   border: 0.5px solid #4A525A;
   border-radius: 8px;
   transition: all 0.4s linear;
   text-decoration: none;
+  padding-block: 3rem;
 }
 main .skills .more .more__grid > a:hover {
   border: 5px solid #DA4167;
