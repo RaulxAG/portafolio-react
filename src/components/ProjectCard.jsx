@@ -1,7 +1,8 @@
 export default function ProjectCard({ t, project }) {
     return (
         <div className="projects__card rounded p-1 rounded-lg">
-            <figure className="card__image">
+            
+            {project.image ? <figure className="card__image">
                 <img src={project.image} alt={project.title} className="w-100 object-cover mb-2 rounded" />
 
                 <article className="card__info">
@@ -17,6 +18,7 @@ export default function ProjectCard({ t, project }) {
                     </div>
                 </article>
             </figure>
+            : "No Image"}
 
             
 
