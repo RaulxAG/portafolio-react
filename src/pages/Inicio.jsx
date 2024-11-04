@@ -1,12 +1,12 @@
 import ProjectCard from "../components/ProjectCard"
 
 const projects = [
-  // { id: 1, title: "Fake Store", description: "Tienda Online haciendo uso de la API 'FakeStore'.", languages: ["javascript", "html5", "css3"], image: "assets/img/fakeStore.png", link: "https://raulxag.github.io/fakeStore/" },
-  // { id: 2, title: "Portafolio Bento Grid", description: "Portafolio maquetado con bento grid estilo Apple.", languages: ["sass", "html5", "css3"], image: "assets/img/portafolio-sass.png", link: "https://raulxag.github.io/portafolio/" },
-  { id: 3, title: "Monstedex", description: "Una enciclopedia de los monstruos del videojuego 'Monster Hunter'.", languages: ["vite", "react", "html5", "css3"], image: "assets/img/monstedex.png", link: "https://raulxag.github.io/ReactApp/" },
-  // { id: 4, title: "Confeti Mario Block", description: "Web simple haciendo uso de una libreria para crear un efecto de confeti.", languages: ["javascript", "html5", "css3"], image: "assets/img/mario-block.png", link: "https://raulxag.github.io/JS_ConfettiEffect/" },
-  // { id: 5, title: "Blog", description: "Un proyecto de blog simple proveniente del curso 'Master en CSS3' de Víctor Robles.", languages: ["css3", "html5"], image: "assets/img/blog.png", link: "https://raulxag.github.io/blog/" },
-  { id: 6, title: "Reservas restaurante", description: "Simulación de web de reservas de un restaurante.", languages: ["sass", "html5", "css3"], image: "assets/img/restaurante.png", link: "https://raulxag.github.io/proyecto-sass-restaurante/" },
+  // { id: 1, title: "Fake Store", description: "Tienda Online haciendo uso de la API 'FakeStore'.", languages: ["javascript", "html5", "css3"], image: "assets/img/fakeStore.webp", link: "https://raulxag.github.io/fakeStore/" },
+  // { id: 2, title: "Portafolio Bento Grid", description: "Portafolio maquetado con bento grid estilo Apple.", languages: ["sass", "html5", "css3"], image: "assets/img/portafolio-sass.webp", link: "https://raulxag.github.io/portafolio/" },
+  { id: 3, title: "Monstedex", description: "Una enciclopedia de los monstruos del videojuego 'Monster Hunter'.", languages: ["vite", "react", "html5", "css3"], image: "assets/img/monstedex.webp", link: "https://raulxag.github.io/ReactApp/" },
+  // { id: 4, title: "Confeti Mario Block", description: "Web simple haciendo uso de una libreria para crear un efecto de confeti.", languages: ["javascript", "html5", "css3"], image: "assets/img/mario-block.webp", link: "https://raulxag.github.io/JS_ConfettiEffect/" },
+  // { id: 5, title: "Blog", description: "Un proyecto de blog simple proveniente del curso 'Master en CSS3' de Víctor Robles.", languages: ["css3", "html5"], image: "assets/img/blog.webp", link: "https://raulxag.github.io/blog/" },
+  { id: 6, title: "Reservas restaurante", description: "Simulación de web de reservas de un restaurante.", languages: ["sass", "html5", "css3"], image: "assets/img/restaurante.webp", link: "https://raulxag.github.io/proyecto-sass-restaurante/" },
   // Agrega más proyectos aquí
 ];
 
@@ -20,9 +20,13 @@ export default function Inicio({ t }) {
           <p className="m-0">Raúl Arroyo</p>
         </article>
 
-        <section className="about__links d-flex justify-content-between gap-2 mt-3">
-          <a href="https://github.com/RaulxAG/" target="blank" className="fs-5" rel="noopener noreferrer" aria-label="GitHub">GitHub <i className="rrss bi bi-github"></i></a>
-          <a href="https://www.linkedin.com/in/raul-arrgon/" target="blank" className="fs-5" rel="noopener noreferrer" aria-label="LinkedIn">LinkedIn <i className="rrss bi bi-linkedin"></i></a>
+        <section className="about__links d-flex flex-column align-items-center justify-content-between gap-2 mt-3">
+          <div className="d-flex justify-content-between gap-2">
+            <a href="https://github.com/RaulxAG/" target="blank" className="fs-5" rel="noopener noreferrer" aria-label="GitHub"><i className="rrss bi bi-github"></i> GitHub</a>
+            <a href="https://www.linkedin.com/in/raul-arrgon/" target="blank" className="fs-5" rel="noopener noreferrer" aria-label="LinkedIn">LinkedIn <i className="rrss bi bi-linkedin"></i></a>
+          </div>
+
+          <a href="files/CV_Raul_Arroyo_Gonzalez.pdf" target="blank" className="fs-5" rel="noopener noreferrer" aria-label="Descargar CV">{t('download')} CV <i class="fa-solid fa-file"></i></a>
         </section>
       </section>
 
@@ -36,7 +40,7 @@ export default function Inicio({ t }) {
               <p>{t('about-3')}</p>
             </article>
 
-            <img src="https://static-00.iconduck.com/assets.00/profile-default-icon-2048x2045-u3j7s5nj.png" alt="foto de perfil" />
+            <img src="assets/img/raul.webp" alt="foto de perfil" />
           </div>
         </section>
 

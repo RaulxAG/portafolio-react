@@ -5,7 +5,7 @@ import 'bootstrap-icons/font/bootstrap-icons.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 import './utils/i18n.jsx';
-import { createHashRouter, RouterProvider } from 'react-router-dom';
+import { createHashRouter, RouterProvider, useLocation } from 'react-router-dom';
 
 import Language from './components/Language.jsx';
 import Menu from './components/Menu.jsx';
@@ -44,6 +44,16 @@ const App = () => {
       element: <Contacto t={t} />
     }
   ]);
+
+  const ScrollToTop = () => {
+    const { pathname } = useLocation();
+  
+    useEffect(() => {
+      window.scrollTo(0, 0);
+    }, [pathname]); // Resetea el scroll al cambiar de ruta
+  
+    return null; // No renderiza nada
+  };
 
   return (
     <React.StrictMode>

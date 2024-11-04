@@ -341,8 +341,6 @@ main .skills__content, main .more {
   }
   main .about {
     width: 90%;
-  }
-  main .about {
     text-align: center;
   }
   main .about div {
@@ -351,7 +349,7 @@ main .skills__content, main .more {
     align-items: center;
   }
   main .about div article {
-    text-align: center;
+    text-align: justify;
   }
   main .about div img {
     width: 30%;
@@ -376,6 +374,7 @@ main .skills__content, main .more {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
   gap: 3rem;
+  padding-bottom: 7rem;
 }
 .projects__card {
   position: relative; /* Necesario para posicionar elementos hijos */
@@ -432,6 +431,11 @@ main .skills__content, main .more {
   color: #e7e7e7 !important;
 }
 
+@media screen and (max-width: 767px) {
+  .projects {
+    padding-bottom: 10rem !important;
+  }
+}
 .contact__content {
   width: 50%;
 }

@@ -18,7 +18,7 @@ export default function Language() {
         <>
             <button onClick={changeLanguage} className="btn btn-link rounded-pill">
                 <img 
-                    src={currentLang === 'en' ? 'assets/img/flag-es.png' : 'assets/img/flag-en.png'} 
+                    src={currentLang === 'en' ? 'assets/img/flag-es.webp' : 'assets/img/flag-en.webp'} 
                     alt={currentLang === 'en' ? 'Cambiar a Español' : 'Change to English'}
                     style={{ width: '50px', height: '50px' }}
                 />
@@ -26,7 +26,7 @@ export default function Language() {
             <section>
                 <button onClick={changeLanguage} className="btn btn-link rounded-pill">
                     <img 
-                        src={currentLang === 'en' ? 'assets/img/flag-es.png' : 'assets/img/flag-en.png'} 
+                        src={currentLang === 'en' ? 'assets/img/flag-es.webp' : 'assets/img/flag-en.webp'} 
                         alt={currentLang === 'en' ? 'Cambiar a Español' : 'Change to English'}
                         style={{ width: '50px', height: '50px' }}
                     />
