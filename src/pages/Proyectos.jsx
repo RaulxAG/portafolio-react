@@ -2,7 +2,7 @@ import { useEffect } from "react";
 import ProjectCard from "../components/ProjectCard";
 
 const projects = [
-    { id: 1, title: "Iliberp", description: "TFG DAW: Software ERP, versión Demo de la app de clientes.", languages: ["react", "aws", "django", "sass", "docker"], image: "assets/img/iliberp.webp", link: "https://iliberp-demo.vercel.app/" },
+    { id: 1, title: "Iliberp", description: "TFG DAW: Software ERP, versión Demo de la app de clientes.", languages: ["react", "aws", "django", "sass", "docker", "mysql", "terraform"], image: "assets/img/iliberp.webp", link: "https://iliberp-demo.vercel.app/" },
     { id: 2, title: "Weather App", description: "Consulta datos meteorológicos de tus zonas preferidas.", languages: ["vite", "react", "html5", "css3"], image: "assets/img/weather.webp", link: "https://raulxag-weather.vercel.app/" },
     { id: 3, title: "Calculadora IMC", description: "Calcula tu índice de masa corporal de manera sencilla.", languages: ["html5", "css3", "javascript"], image: "assets/img/calculadora_imc.webp", link: "https://raulxag.github.io/calculadora_imc/" },
     { id: 4, title: "Fake Store", description: "Tienda Online haciendo uso de la API 'FakeStore'.", languages: ["javascript", "html5", "css3"], image: "assets/img/fakeStore.webp", link: "https://raulxag.github.io/fakeStore/" },
