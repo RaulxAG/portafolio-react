@@ -14,6 +14,8 @@ import Inicio from './pages/Inicio.jsx';
 import Proyectos from './pages/Proyectos.jsx';
 import Contacto from './pages/Contacto.jsx';
 import MobileMenu from './components/MobileMenu.jsx';
+import { Analytics } from '@vercel/analytics/react';
+import { SpeedInsights } from '@vercel/speed-insights/react';
 
 const App = () => {
   const { t } = useTranslation();
@@ -66,6 +68,9 @@ const App = () => {
       <Language t={t} />
 
       {isMobile ? <MobileMenu t={t} /> : ''}
+
+      <Analytics />
+      <SpeedInsights />
     </React.StrictMode>
   );
 };
