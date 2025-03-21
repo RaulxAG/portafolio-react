@@ -4,5 +4,5 @@ import react from '@vitejs/plugin-react'
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [react()],
-  base: "https://raul-arroyo-portafolio.vercel.app/portafolio-react/"
+  base: "https://raulxag.github.io/portafolio-react/"
 })
