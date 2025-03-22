@@ -181,7 +181,7 @@ export default function Inicio({ t }) {
                 <ProjectCard key={project.id} project={project} />
               ))}
 
-              <a href="/portafolio-react/#/projects" className="d-flex flex-column gap-3 align-items-center justify-content-center w-50 h-50 align-self-center"><i className="fa-solid fa-angles-right fs-1"></i>{t('seeMore')}</a>
+              <a href="/#/projects" className="d-flex flex-column gap-3 align-items-center justify-content-center w-50 h-50 align-self-center"><i className="fa-solid fa-angles-right fs-1"></i>{t('seeMore')}</a>
             </div>
           </section>
         </div>
